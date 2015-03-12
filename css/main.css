@@ -1,0 +1,67 @@
+body{
+	background-color: white;
+	/*font-family: 'Gloria Hallelujah', cursive;*/
+	font-size: 20px;
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'Bree Serif', serif;
+}
+
+.menu {
+	background-color: #FFC488;
+	border-bottom: 2px dashed brown;
+	margin: 0 auto;
+	text-align: center;
+}
+.menu .content .author, .title, .cdate{
+	/*border: 1px solid red;*/
+	display: inline-block;
+}
+.menu .content .author h2{
+	font-size: 14px;
+}
+.menu .content .title{
+	width: 500px;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 50px;
+}
+
+/*=================================*/
+
+.shoplist{
+	
+}
+.shoplist .content{
+	font-size: 18px;
+	font-family: arial;
+	max-width: 400px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.shoplist .shop-items, .shop-total{
+	display: inline-block;
+	/*border: 1px solid red;*/
+}
+.itemlist{
+	/*list-style-type: decimal;*/
+	font-size: 30px;
+}
+.shoplist .shop-items{
+	width: 99%;
+}
+
+/*=================================*/
+/*Responsive settings*/
+
+@media screen and (max-width: 500px){
+	/*hide author and date when width < 500px*/
+	.menu .content .title{
+		font-size: 22px;
+		width: 300px;
+	}
+	.menu .content .author, .cdate{
+		display: inline-block;
+		visibility: hidden;
+	}
+}
